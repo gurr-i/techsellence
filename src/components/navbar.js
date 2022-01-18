@@ -1,8 +1,9 @@
-import React,{useState} from 'react';
+import React,{useState ,useEffect} from 'react';
 import {Link} from 'react-router-dom';
-import { Button } from './button.js';
+// import { Button } from './button.js';
 import './navbar.css';
 import './button.css';
+import Button from '@mui/material/Button';
 
 // rfce
 function Navbar() {
@@ -25,6 +26,11 @@ function Navbar() {
         }
     }
 
+    // Remove refresh signup button
+    useEffect(() => {
+        showButton();
+    },[]);
+
     window.addEventListener('resize', showButton);
 
     return (
@@ -32,14 +38,14 @@ function Navbar() {
             <nav className='navbar'>
                 {/* ul>li*2>a */}
                 <div className='navbar-container'>
-                    <Link to="/" className="navbar-logo">
-                        TechSellence <i className="fab fa-typo3"></i> 
+                    <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+                        <i className="fab fa-typo3"></i> 
                     </Link>
                     <div className="menu-icon" onClick={handleClick}>
                     {/* <i className={click ? 'fas fa-times' : 'fas fa-bars'} /> */}
-                    <i className={click ? 'fas fa-times' : 'fas fa-bars'}></i>
+                    <i className={click ? 'fas fa-times fa-1x fa-pull-right' : 'fas fa-bars fa-1x fa-pull-right'}></i>
                     </div>
-                    <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+                    <ul className={click ? 'nav-menu active fa-1x' : 'nav-menu fa-1x '}>
                         <li className='nav-item'>
                             <Link to='/' className='nav-links' onClick={closeMobileMenu}>
                                 Home
@@ -56,13 +62,13 @@ function Navbar() {
                             </Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/Reach_Us' className='nav-links' onClick={closeMobileMenu}>
-                                Reach_Us
+                            <Link to='/About_Us' className='nav-links' onClick={closeMobileMenu}>
+                                About Us
                             </Link>
                         </li>
                     </ul>
-
-                    {button && <Button buttonStyle='btn--outline'> Sign Up</Button>}
+                    {/* Mi ui Button Used */}
+                    {button && <Button variant="outlined" color='inherit'>Sign Up</Button>}
                 </div>
             </nav>
         </>

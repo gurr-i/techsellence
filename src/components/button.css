@@ -6,10 +6,11 @@
 .btn{
     padding: 8px 20px;
     border-radius: 50px;
-    outline: none;
-    border: none;
+    /* outline: none; */
+    border: 1px black;;
     cursor: pointer;
-    box-shadow: 5px;
+    box-shadow: 8px;
+    background-color: aliceblue;
 }
 
 .btn--primary{
@@ -45,4 +46,8 @@
     background: white;
     color: #242424;
     transition: 250ms;
+}
+
+.css-1rwt2y5-MuiButtonBase-root-MuiButton-root{
+    color: black;
 }

@@ -39,7 +39,7 @@ function Navbar() {
                 {/* ul>li*2>a */}
                 <div className='navbar-container'>
                     <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-                        <i className="fab fa-typo3"></i> 
+                        <i className="fab fa-typo3 fa-pull-right fa-1x"></i> 
                     </Link>
                     <div className="menu-icon" onClick={handleClick}>
                     {/* <i className={click ? 'fas fa-times' : 'fas fa-bars'} /> */}

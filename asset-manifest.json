@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/techsellence_reactjs/static/css/main.b859fbc8.css",
+    "main.js": "/techsellence_reactjs/static/js/main.d733ec2a.js",
+    "index.html": "/techsellence_reactjs/index.html",
+    "main.b859fbc8.css.map": "/techsellence_reactjs/static/css/main.b859fbc8.css.map",
+    "main.d733ec2a.js.map": "/techsellence_reactjs/static/js/main.d733ec2a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b859fbc8.css",
+    "static/js/main.d733ec2a.js"
+  ]
+}

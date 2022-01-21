@@ -1,0 +1,77 @@
+:root{
+    --primary: #fff
+}
+
+/* --------------Button CSS -----------*/
+.btn{
+    padding: 8px 12px;
+    border-radius: 5px;
+    /* outline: none; */
+    border: -12px black;;
+    cursor: pointer;
+    box-shadow: 8px;
+    background-color: #ffffff36;
+    display: 'flex';
+    /* justifyContent: 'center' */
+}
+
+.btn--primary{
+    padding: 8px 20px;
+    border-radius: 2px;
+    outline: none;
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+    cursor: pointer;
+    color: #242424;
+}
+
+.btn---primary{
+    border-radius: 2px;
+    border: 1px black;
+}
+
+.btn--outline{
+    border-width: 5px;
+    border-color: #242424;
+    background-color: transparent;
+    color: rgb(92, 84, 84);
+    padding: 8px 20px;
+    border: 1px solid var(--primary);
+    transition: all 0.3s ease-out;
+}
+
+.btn--medium{
+    padding: 8px 20px;
+    font-size: 20px;
+
+}
+
+.btn--large{
+    padding: 12px 26px;
+    font-size: 20px;
+}
+
+.btn--medium:hover,btn--large:hover{
+    background: white;
+    color: #242424;
+    transition: 250ms;
+}
+
+.css-1rwt2y5-MuiButtonBase-root-MuiButton-root{
+    color: black;
+}
+
+/* For 4k DesktopScreen */
+@media screen and (min-width: 2200px) {
+    .btn{
+        padding: 8px 20px;
+        border-radius: 5px;
+        /* outline: none; */
+        border: -12px black;;
+        cursor: pointer;
+        box-shadow: 8px;
+        background-color: #ffffff36;
+        display: 'flex';
+    }
+    
+}
